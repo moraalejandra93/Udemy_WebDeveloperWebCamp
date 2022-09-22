@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Dem</title>
+</head>
+
+<body>
+    <main>
+        <h1>Demo Forms</h1>
+        <form action="/search">
+            <button type="button">Just a button</button>
+            <p>
+                <label for="username">Enter a username:</label>
+                <input id="username" type="text" placeholder="username" name="username">
+            </p>
+            <p>
+                <label for="password">Enter your password</label>
+                <input id="password" type="password" placeholder="Password" name="password">
+            </p>
+            <p>
+                <label>
+                    Choose your favorite colour:
+                    <input type="color" name="color">
+                </label>
+            </p>
+            <input type="search">
+            <input type="color">
+            <input type="file">
+            <div class="preference">
+                <label for="cheese">Do you like cheese?</label>
+                <input type="checkbox" name="cheese" id="cheese">
+                <button>Submit</button>
+            </div>
+        </form>
+        <!-- Outside of a form -->
+        <hr>
+        <button>Bot Inside de form</button>
+        <h2>Hijacking Searches</h2>
+        <h3>Search Reddit</h3>
+        <form action="https://www.reddit.com/search">
+            <input type="text" placeholder="Type" name="q">
+            <button>Search Reddit</button>
+        </form>
+        <h3>Search Google</h3>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search Google">
+            <button>Search Google</button>
+        </form>
+        <h3>Search Youtube</h3>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query" placeholder="Search Youtube">
+            <button>Searcg YouTube</button>
+        </form>
+        <hr>
+        <h2>More inputs</h2>
+        <form action="/birds">
+            <input type="checkbox" name="agree" id="agree" checked>
+            <label for="agree">I agree to see my soul</label>
+            <p>
+                <label for="xs">XS:</label>
+                <input type="radio" name="size" id="xs" value="xs">
+                <label for="m">M:</label>
+                <input type="radio" name="size" id="m" value="m">
+                <label for="l">L:</label>
+                <input type="radio" name="size" id="l" value="l">
+            </p>
+            <p>
+                <label for="meal">Please selecy a Meal</label>
+                <select name="meal" id="meal">
+                    <option value="">--Please choose an option--</option>
+                    <option value="fish">Fish</option>
+                    <option value="veg">Vegetarian</option>
+                    <option value="chicken">Chicken</option>
+                </select>
+            </p>
+            <p>
+                <label for="cheese">Amoun of Cheese:</label>
+                <input type="range" name="cheese" min="0" max="10" value="5" step="1" name="cheese_level">
+            </p>
+            <p>
+                <label for="requests">Please detail your requests:</label>
+                <br>
+                <textarea name="requests?" cols="30" rows="5" id="requests" placeholder="Type here"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+        <h2>Validation Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First name</label>
+            <input type="text" name="first" id="first" required>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20">
+            <button>Submit</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
