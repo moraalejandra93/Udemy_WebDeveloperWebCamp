@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: magenta;
+}
+
+.box3 {
+    background-color: yellowgreen;
+}
+
+.box4 {
+    background-color: yellow;
+}
+
+.box5 {
+    background-color: aliceblue;
+}
+
+.box6 {
+    background-color: pink;
+}
